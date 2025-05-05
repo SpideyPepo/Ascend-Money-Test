@@ -15,9 +15,9 @@ public class InquiryServiceResultDTO implements Serializable {
 
     private java.lang.String balance;
 
-    private java.lang.String ref_no1;
+    private java.lang.String refNo1;
 
-    private java.lang.String ref_no2;
+    private java.lang.String refNo2;
 
     private java.lang.String amount;
 
@@ -55,20 +55,20 @@ public class InquiryServiceResultDTO implements Serializable {
         this.balance = balance;
     }
 
-    public java.lang.String getRef_no1() {
-        return ref_no1;
+    public java.lang.String getRefNo1() {
+        return refNo1;
     }
 
-    public void setRef_no1(java.lang.String ref_no1) {
-        this.ref_no1 = ref_no1;
+    public void setRefNo1(java.lang.String refNo1) {
+        this.refNo1 = refNo1;
     }
 
-    public java.lang.String getRef_no2() {
-        return ref_no2;
+    public java.lang.String getRefNo2() {
+        return refNo2;
     }
 
-    public void setRef_no2(java.lang.String ref_no2) {
-        this.ref_no2 = ref_no2;
+    public void setRefNo2(java.lang.String refNo2) {
+        this.refNo2 = refNo2;
     }
 
     public java.lang.String getAmount() {
@@ -101,7 +101,7 @@ public class InquiryServiceResultDTO implements Serializable {
     public String toString() {
         return "InquiryServiceResultDTO [tranID=" + tranID + ",namespace = "+namespace + ", reasonCode="
                 + reasonCode + ", reasonDesc=" + reasonDesc + ", balance="
-                + balance + ", ref_no1=" + ref_no1 + ", ref_no2=" + ref_no2
+                + balance + ", ref_no1=" + refNo1 + ", ref_no2=" + refNo2
                 + ", amount=" + amount + " ,account_name="+accountName+"  ]";
     }
 
