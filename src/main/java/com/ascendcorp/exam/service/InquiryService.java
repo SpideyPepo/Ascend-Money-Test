@@ -21,14 +21,11 @@ public class InquiryService {
     public InquiryServiceResultDTO inquiry(String transactionId,
                                            Date tranDateTime,
                                            String channel,
-                                           String locationCode,
                                            String bankCode,
                                            String bankNumber,
                                            double amount,
                                            String reference1,
-                                           String reference2,
-                                           String firstName,
-                                           String lastName) {
+                                           String reference2) {
         InquiryServiceResultDTO respDTO = new InquiryServiceResultDTO();
         try {
             log.info("Validating request parameters.");

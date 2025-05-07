@@ -41,9 +41,9 @@ public class InquiryServiceTest {
                 .validateRequest(any(), any(), any(), any(), any(), anyDouble());
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry(null, new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("500", inquiry.getReasonCode());
@@ -67,9 +67,9 @@ public class InquiryServiceTest {
         });
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("200", inquiry.getReasonCode());
@@ -90,9 +90,9 @@ public class InquiryServiceTest {
         });
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("400", inquiry.getReasonCode());
@@ -116,9 +116,9 @@ public class InquiryServiceTest {
 
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("1091", inquiry.getReasonCode());
@@ -140,9 +140,9 @@ public class InquiryServiceTest {
         });
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("501", inquiry.getReasonCode());
@@ -164,9 +164,9 @@ public class InquiryServiceTest {
         });
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("504", inquiry.getReasonCode());
@@ -180,9 +180,9 @@ public class InquiryServiceTest {
                 anyDouble(),anyString(),anyString())).thenReturn(null);
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("504", inquiry.getReasonCode());
@@ -196,9 +196,9 @@ public class InquiryServiceTest {
                 anyDouble(),anyString(),anyString())).thenThrow(WebServerException.class);
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("504", inquiry.getReasonCode());
@@ -214,9 +214,9 @@ public class InquiryServiceTest {
                 anyDouble(),anyString(),anyString())).thenThrow(ex);
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("503", inquiry.getReasonCode());
@@ -232,9 +232,9 @@ public class InquiryServiceTest {
                 anyDouble(),anyString(),anyString())).thenThrow(ex);
 
         InquiryServiceResultDTO inquiry = inquiryService.inquiry("123456", new Date(),
-                "Mobile", null,
+                "Mobile",
                 "BANK1", "4321000", 100d, "rrivsffv234c",
-                "11223xfgt", null, null);
+                "11223xfgt");
 
         assertNotNull(inquiry);
         assertEquals("503", inquiry.getReasonCode());
